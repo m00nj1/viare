@@ -4,13 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- aos css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- 슬라이더 css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <!-- css -->
     <link rel="stylesheet" href="./CSS/index.css" />
     <link rel="stylesheet" href="./CSS/00_style.css" />
   </head>
   <body>
     <div id="page">
-      <!-- 상단 배너, gnb-->
+      <!-- gnb-->
+      <div class="gnb">
+        <div>
+          <a href="index.html"><p class="logo">Viare</p></a>
+        </div>
+        <ul>
+          <li>
+            <a href="#none"
+              ><img src="./img/돋보기_wh_icon.svg" alt="검색"
+            /></a>
+          </li>
+          <li>
+            <a href="#none"
+              ><img src="./img/하트_wh_icon.svg" alt="위시리스트"
+            /></a>
+          </li>
+          <li>
+            <a href="#none"
+              ><img src="./img/장바구니_wh_icon.svg" alt="장바구니"
+            /></a>
+          </li>
+          <li>
+            <a href="#none"
+              ><img src="./img/햄버거_wh_icon.svg" alt="목록"
+            /></a>
+          </li>
+        </ul>
+      </div>
       <!-- gnb-scroll 스크롤시 메뉴 고정-->
       <div class="gnb-scroll">
         <div>
@@ -35,51 +70,76 @@
           </li>
         </ul>
       </div>
-      <div class="banner">
-        <div class="gnb">
-          <div>
-            <a href="index.html"><p class="logo">Viare</p></a>
-          </div>
-          <ul>
-            <li>
-              <a href="#none"
-                ><img src="./img/돋보기_wh_icon.svg" alt="검색"
-              /></a>
-            </li>
-            <li>
-              <a href="#none"
-                ><img src="./img/하트_wh_icon.svg" alt="위시리스트"
-              /></a>
-            </li>
-            <li>
-              <a href="#none"
-                ><img src="./img/장바구니_wh_icon.svg" alt="위시리스트"
-              /></a>
-            </li>
-            <li>
-              <a href="#none"
-                ><img src="./img/햄버거_wh_icon.svg" alt="목록"
-              /></a>
-            </li>
-          </ul>
+      <!-- pc ver. gnb-->
+      <div class="pc-gnb">
+        <div>
+          <a href="index.html"><p class="pc-logo">Viare</p></a>
         </div>
+        <ul>
+          <li>
+            <a href="#none"><img src="./img/돋보기icon.svg" alt="검색" /></a>
+          </li>
+          <li>
+            <a href="#none"
+              ><img src="./img/하트icon.svg" alt="위시리스트"
+            /></a>
+          </li>
+          <li>
+            <a href="#none"
+              ><img src="./img/장바구니icon.svg" alt="장바구니"
+            /></a>
+          </li>
+          <li>
+            <a href="#none"><img src="./img/프로필icon.svg" alt="프로필" /></a>
+          </li>
+        </ul>
+      </div>
+      <!-- 배너 슬라이드 -->
+      <div class="banner-slider">
+        <div>
+          <img src="./img/full banner.jpg" alt="배너" />
+        </div>
+        <div>
+          <img src="./img/full banner02.jpg" alt="배너" />
+        </div>
+        <div>
+          <img src="./img/full banner03.jpg" alt="배너" />
+        </div>
+        <div>
+          <img src="./img/full banner04.jpg" alt="배너" />
+        </div>
+      </div>
+      <!-- 화살표 + 슬라이드 숫자 컨테이너 -->
+      <div class="slider-controls">
+        <button class="custom-prev">
+          <img src="./img/배너_왼_icon.svg" alt="이전" />
+        </button>
+        <span class="slick-slide-number">1 / 4</span>
+        <button class="custom-next">
+          <img src="./img/배너_오_icon.svg" alt="다음" />
+        </button>
       </div>
       <!-- 컨텐츠 박스 -->
       <section>
         <!-- New Arrivals -->
         <div class="content">
-          <h1 class="content-name">New Arrivals</h1>
-          <p class="content-text">
+          <h1 data-aos="fade-right" class="content-name">New Arrivals</h1>
+          <p
+            data-aos="fade-down"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            class="content-text"
+          >
             빛과 투명함을 새롭게 해석한 VIARE의 최신 디자인을 소개합니다.
-            감각적인 디테일로 완성된 신제품과 함께 일상의 우아함을 경험해
-            보세요.
           </p>
           <!-- 세로형 카드 -->
           <div class="card01-section">
             <div class="card01">
               <div>
                 <div class="wh-like-icon">
-                  <img src="./img/좋아요비활성_wh_icon.svg" alt="좋아요" />
+                  <a href="#none"
+                    ><img src="./img/좋아요비활성_wh_icon.svg" alt="좋아요"
+                  /></a>
                 </div>
                 <img src="./img/빛의여운.jpg" alt="빛의 여운 유리잔" />
               </div>
@@ -93,7 +153,9 @@
             <div class="card01">
               <div>
                 <div class="wh-like-icon">
-                  <img src="./img/좋아요비활성_wh_icon.svg" alt="좋아요" />
+                  <a href="#none"
+                    ><img src="./img/좋아요비활성_wh_icon.svg" alt="좋아요"
+                  /></a>
                 </div>
                 <img src="./img/빛의조각.jpg" alt="빛의 조각 커트러리 세트" />
               </div>
@@ -107,7 +169,9 @@
             <div class="card01">
               <div>
                 <div class="wh-like-icon">
-                  <img src="./img/좋아요비활성_wh_icon.svg" alt="좋아요" />
+                  <a href="#none"
+                    ><img src="./img/좋아요비활성_wh_icon.svg" alt="좋아요"
+                  /></a>
                 </div>
                 <img src="./img/로제빛.jpg" alt="로제 빛 머금은 유리잔 세트" />
               </div>
@@ -121,7 +185,9 @@
             <div class="card01">
               <div>
                 <div class="wh-like-icon">
-                  <img src="./img/좋아요비활성_wh_icon.svg" alt="좋아요" />
+                  <a href="#none"
+                    ><img src="./img/좋아요비활성_wh_icon.svg" alt="좋아요"
+                  /></a>
                 </div>
                 <img src="./img/노을.jpg" alt="노을 담은 글라스 세트" />
               </div>
@@ -136,71 +202,106 @@
         </div>
         <!-- Products -->
         <div class="content">
-          <h1 class="content-name">Products</h1>
-          <p class="content-text">
-            VIARE가 선보이는 유리 컬렉션은 투명한 빛과 섬세한 디자인이 어우러져
-            공간을 특별하게 만듭니다. 세련된 감각과 실용성이 균형 잡힌 다양한
-            제품을 만나보세요.
+          <h1 data-aos="fade-right" class="content-name">Products</h1>
+          <p
+            data-aos="fade-down"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            class="content-text"
+          >
+            투명한 빛과 섬세한 디자인이 어우러져 공간을 특별하게 만듭니다.
           </p>
           <!-- 블록 이미지 -->
           <div class="block-section">
             <div class="block-left">
               <img src="./img/product_01.jpg" alt="products01" />
+              <div class="hover-icon">
+                <img src="./img/플러스_icon.svg" alt="아이콘" />
+              </div>
             </div>
             <div class="block-right-container">
               <div class="block-right">
                 <img src="./img/product_02.jpg" alt="products02" />
+                <div class="hover-icon">
+                  <img src="./img/플러스_icon.svg" alt="아이콘" />
+                </div>
               </div>
               <div class="block-right">
                 <img src="./img/product_03.jpg" alt="products03" />
+                <div class="hover-icon">
+                  <img src="./img/플러스_icon.svg" alt="아이콘" />
+                </div>
               </div>
             </div>
           </div>
         </div>
         <!-- Trending Now -->
         <div class="content">
-          <h1 class="content-name">Trending Now</h1>
-          <p class="content-text">
-            지금 가장 사랑받는 VIARE의 인기 디자인을 만나보세요. 많은 사람들이
-            선택한 특별한 제품들로 일상에 빛나는 감각을 더해보세요.
+          <h1 data-aos="fade-right" class="content-name">Trending Now</h1>
+          <p
+            data-aos="fade-down"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            class="content-text"
+          >
+            많은 사람들이 선택한 특별한 제품들로 일상에 빛나는 감각을
+            더해보세요.
           </p>
-          <div class="trending-slide">
-            <img src="./img/trending_01.jpg" alt="trending" />
-          </div>
-          <!-- 가로형 카드 -->
-          <div class="card02-section">
-            <div class="card02-container">
-              <div class="card02">
-                <div>
-                  <img src="./img/trending_02.jpg" alt="빛의 여운 유리잔" />
-                </div>
-                <div class="card02-text">
-                  <p class="card-name">빛의 여운 유리잔 28 cl</p>
-                  <p class="card-color">Clear White-glass</p>
-                  <p class="card-per">30%</p>
-                  <p class="card-won">₩ 11,600</p>
-                  <div class="like-icon">
-                    <img
-                      src="./img/좋아요비활성_color_icon.svg"
-                      alt="위시리스트"
-                    />
+          <div class="trend">
+            <div class="trending-slide">
+              <div><img src="./img/trending_01.jpg" alt="trending" /></div>
+              <div><img src="./img/trending_01-02.jpg" alt="trending" /></div>
+              <div><img src="./img/trending_01-03.jpg" alt="trending" /></div>
+            </div>
+
+            <!--슬라이드 화살표 컨테이너 -->
+            <div class="slider-controls02">
+              <button class="custom-prev02">
+                <img src="./img/배너_왼_icon.svg" alt="이전" />
+              </button>
+              <button class="custom-next02">
+                <img src="./img/배너_오_icon.svg" alt="다음" />
+              </button>
+            </div>
+            <!-- 가로형 카드 -->
+            <div class="card02-section">
+              <div class="card02-container">
+                <div class="card02">
+                  <div>
+                    <a href="#none"
+                      ><img class="card02-img" src="./img/trending_02.jpg" alt="빛의 여운 유리잔"
+                    /></a>
+                  </div>
+                  <div class="card02-text">
+                    <p class="card-name">빛의 여운 유리잔 28 cl</p>
+                    <p class="card-color">Clear White-glass</p>
+                    <p class="card-per">30%</p>
+                    <p class="card-won">₩ 11,600</p>
+                    <div class="like-icon">
+                      <a href="#none"
+                        ><img
+                          src="./img/좋아요비활성_color_icon.svg"
+                          alt="위시리스트"
+                      /></a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card02">
-                <div>
-                  <img src="./img/trending_03.jpg" alt="앰버 빛 식탁 세트" />
-                </div>
-                <div class="card02-text">
-                  <p class="card-name">앰버 빛 식탁 세트</p>
-                  <p class="card-color">Golden Hour-glass</p>
-                  <p class="card-per">26%</p>
-                  <p class="card-won">₩ 43,900</p>
-                  <div class="like-icon">
-                    <img
-                      src="./img/좋아요비활성_color_icon.svg"
-                      alt="위시리스트"
-                    />
+                <div class="card02">
+                  <div>
+                    <img class="card02-img" src="./img/trending_03.jpg" alt="앰버 빛 식탁 세트" />
+                  </div>
+                  <div class="card02-text">
+                    <p class="card-name">앰버 빛 식탁 세트</p>
+                    <p class="card-color">Golden Hour-glass</p>
+                    <p class="card-per">26%</p>
+                    <p class="card-won">₩ 43,900</p>
+                    <div class="like-icon">
+                      <a href="#none"
+                        ><img
+                          src="./img/좋아요비활성_color_icon.svg"
+                          alt="위시리스트"
+                      /></a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -209,51 +310,91 @@
         </div>
         <!-- Gift Ideas -->
         <div class="content">
-          <h1 class="content-name">Gift Ideas</h1>
-          <p class="content-text">
-            소중한 순간을 더욱 특별하게 만들어줄 VIARE의 선물 추천 컬렉션을
-            소개합니다. 빛과 감성을 담은 유리 제품으로 기억에 남을 선물을
-            준비해보세요.
+          <h1 data-aos="fade-right" class="content-name">Gift Ideas</h1>
+          <p
+            data-aos="fade-down"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            class="content-text"
+          >
+            빛과 감성을 담은 유리 제품으로 기억에 남을 선물을 준비해보세요.
           </p>
           <!-- 이미지/버튼 -->
           <div class="gift-section">
             <div class="gift-container">
               <div class="gift-img">
                 <img
+                  data-aos="zoom-in-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
                   class="ma"
                   src="./img/gift_01.jpg"
                   alt="아쿠아 마린 유리볼 세트"
                 />
               </div>
-              <p class="gift-name">아쿠아 마린 유리볼 세트</p>
-              <button>
-                더 알아보기
-                <img src="./img/더알아보기icon.svg" alt="더 알아보기" />
-              </button>
-            </div>
-            <div class="gift-container">
-              <div class="gift-img">
-                <img class="cr" src="./img/gift_02.jpg" alt="크리스탈 접시랙" />
+              <div class="gift-tx-container">
+                <p class="gift-name">아쿠아 마린 유리볼 세트</p>
+                <span
+                  data-aos="fade-down"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                  class="gift-caption"
+                  >맑은 바다의 투명함을 담은 유리볼 세트입니다.<br />섬세한
+                  아쿠아 컬러와 부드러운 곡선 디자인으로 테이블 위에 신선한
+                  감각을 더해보세요.</span
+                >
+                <button class="gift-bt">더 알아보기 &nbsp;&nbsp;></button>
               </div>
-              <p class="gift-name">크리스탈 빛 접시랙</p>
-              <button>
-                더 알아보기
-                <img src="./img/더알아보기icon.svg" alt="더 알아보기" />
-              </button>
+            </div>
+            <div class="gift-container crystal-reverse">
+              <div class="gift-img">
+                <img
+                  data-aos="zoom-in-left"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                  class="cr"
+                  src="./img/gift_02.jpg"
+                  alt="크리스탈 접시랙"
+                />
+              </div>
+              <div class="gift-tx-container">
+                <p class="gift-name">크리스탈 빛 접시랙</p>
+                <span
+                  data-aos="fade-down"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                  class="gift-caption"
+                  >투명한 유리로 제작된 접시랙으로 빛과 어우러져 공간에 우아한
+                  분위기를 연출합니다. 물결 형태의 디자인이 주방의 감각적인
+                  인테리어 오브제가 됩니다.</span
+                >
+                <button class="gift-bt">더 알아보기 &nbsp;&nbsp;></button>
+              </div>
             </div>
             <div class="gift-container">
               <div class="gift-img">
                 <img
+                  data-aos="zoom-in-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
                   class="so"
                   src="./img/gift_03.jpg"
                   alt="소프트 베리 접시 세트"
                 />
               </div>
-              <p class="gift-name">소프트 베리 접시 세트</p>
-              <button>
-                더 알아보기
-                <img src="./img/더알아보기icon.svg" alt="더 알아보기" />
-              </button>
+              <div class="gift-tx-container">
+                <p class="gift-name">소프트 베리 접시 세트</p>
+                <span
+                  data-aos="fade-down"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                  class="gift-caption"
+                  >베리 빛이 스며든 감성적인 유리 접시 세트입니다.<br />과일이나
+                  디저트를 담으면 일상 속 테이블이 한층 사랑스럽게
+                  빛납니다.</span
+                >
+                <button class="gift-bt">더 알아보기 &nbsp;&nbsp;></button>
+              </div>
             </div>
           </div>
         </div>
@@ -312,8 +453,15 @@
         </div>
       </footer>
     </div>
-    <!-- js -->
     <script src="http://code.jquery.com/jquery-3.1.0.js"></script>
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- 슬라이더 js -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- 내js -->
     <script src="./JS/index.js"></script>
   </body>
 </html>

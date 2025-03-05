@@ -34,7 +34,6 @@
 
 body {
     font-family: 'Pretendard-Regular';
-    font-weight: 400; /* regular */
 }
 a {text-decoration: none;color: var(--black);}
 li {display: block; list-style-type: none;}
