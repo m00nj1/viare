@@ -1,10 +1,6 @@
 
 $(document).ready(function () {
 
-  // 모든 리소스가 로드된 후 body를 보이게 함  화면깜빡거림 방지
-  window.addEventListener("load", function () {
-    document.body.style.opacity = "1";
-  });
 
 
 // -----------------------------------------gnb 스크롤시 고정
@@ -14,10 +10,10 @@ $(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 200) {
       $(".gnb-scroll").fadeIn();
-      $(".banner").css("margin-top", "60px"); // gnb-scroll 높이만큼 배너 밀어내기
+      $(".banner-slider").css("margin-top", "60px"); // gnb-scroll 높이만큼 배너 밀어내기
     } else {
       $(".gnb-scroll").fadeOut();
-      $(".banner").css("margin-top", "0"); // 원래 위치로 복귀
+      $(".banner-slider").css("margin-top", "0"); // 원래 위치로 복귀
     }
   });
 });
@@ -25,7 +21,10 @@ $(function () {
 
 // ----------------------------------------aos
 
-AOS.init();
+AOS.init({
+  once:true,
+});
+
 
 // -----------------------------------------메인 배너 플러그인
 
