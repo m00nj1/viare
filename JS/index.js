@@ -73,6 +73,25 @@ $(document).ready(function () {
   });
 
 });
+
+
+// -----------------------------------------------------카드 배너 스크롤
+
+
+  let cardSlider = $(".card01-section");
+
+  // ✅ 왼쪽 버튼 클릭 시 왼쪽으로 이동
+  $(".card-prev").click(function () {
+    cardSlider.animate({ scrollLeft: "-=300px" }, "smooth");
+  });
+
+  // ✅ 오른쪽 버튼 클릭 시 오른쪽으로 이동
+  $(".card-next").click(function () {
+    cardSlider.animate({ scrollLeft: "+=300px" }, "smooth");
+  });
+
+
+
 // -----------------------------------------------------좋아요 버튼
 
 
