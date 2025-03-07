@@ -1,4 +1,6 @@
 
+$(document).ready(function () {
+
 // -----------------------------------------gnb 스크롤시 고정
 
 
@@ -15,7 +17,7 @@ $(function () {
 });
 
 
-// aos
+// ----------------------------------------aos
 
 AOS.init();
 
@@ -59,72 +61,46 @@ $(document).ready(function () {
 
 
   // ✅ [재생/멈춤 기능 추가]
-  var playBtn = $(".playbtn img"); // 플레이 버튼 이미지
-  var isPlaying = true; // 초기 상태: 자동 재생 중
 
-  $(".playbtn").on("click", function () {
-    if (isPlaying) {
-      slider.slick("slickPause"); // 슬라이드 멈춤
-      playBtn.attr("src", "./img/play_icon.svg"); // 아이콘 변경 (재생)
-    } else {
-      slider.slick("slickPlay"); // 슬라이드 재생
-      playBtn.attr("src", "./img/stop_icon.svg"); // 아이콘 변경 (멈춤)
-    }
-    isPlaying = !isPlaying; // 상태 변경
+  let playBtn = $(".playbtn img");
+  let isPlaying = true;
+
+  $(".playbtn").click(function () {
+    isPlaying = !isPlaying;
+    slider.slick(isPlaying ? "slickPlay" : "slickPause");
+    playBtn.attr("src", isPlaying ? "./img/stop_icon.svg" : "./img/play_icon.svg");
   });
-});
-// --------------------------------------------------------
 
-$(function () {
-  $(".wh-like-icon").click(function () {
-    let img = $(this).find("img");
-    img.attr(
-      "src",
-      img.attr("src") === "./img/좋아요비활성_wh_icon.svg"
-        ? "./img/좋아요_wh_icon.svg"
-        : "./img/좋아요비활성_wh_icon.svg"
-    );
-  });
 });
+// -----------------------------------------------------좋아요 버튼
 
-$(function () {
-  $(".like-icon").click(function () {
-    let img = $(this).find("img");
-    img.attr(
-      "src",
-      img.attr("src") === "./img/좋아요비활성_color_icon.svg"
-        ? "./img/좋아요_color_icon.svg"
-        : "./img/좋아요비활성_color_icon.svg"
-    );
-  });
-});
 
-$(function () {
-    $(".gift-bt").hover(
-        function () { 
-            $(".gift-bt").css("background-color", "var(--Crystal-Teal)")
-                         .css("color", "var(--White)");
-        },
-        function () { 
-            $(".gift-bt").css("background-color", "")
-                         .css("color", "");
-        }
-    );
+$(".wh-like-icon, .like-icon").click(function () {
+  let img = $(this).find("img");
+  let srcMap = {
+    "./img/좋아요비활성_wh_icon.svg": "./img/좋아요_wh_icon.svg",
+    "./img/좋아요_wh_icon.svg": "./img/좋아요비활성_wh_icon.svg",
+    "./img/좋아요비활성_color_icon.svg": "./img/좋아요_color_icon.svg",
+    "./img/좋아요_color_icon.svg": "./img/좋아요비활성_color_icon.svg",
+  };
+  img.attr("src", srcMap[img.attr("src")] || img.attr("src"));
 });
 
 
 // -----------------------------------------트렌딩 배너 플러그인
 
-$(document).ready(function () {
-    $(".trending-slide").slick({
-      dots: false,
-      arrows: true,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      fade: true,
-      speed: 800,
-      prevArrow: $(".custom-prev"), // 기존 버튼을 그대로 사용
-      nextArrow: $(".custom-next"),
-    });})
+
+$(".trending-slide").slick({
+  dots: false,
+  arrows: true,
+  autoplay: true,
+  autoplaySpeed: 1700,
+  fade: true,
+  speed: 800,
+  prevArrow: $(".custom-prev"),
+  nextArrow: $(".custom-next"),
+});
+
 
     // --------------------------------------------------------
+  });

@@ -101,7 +101,7 @@ section { margin: 0 24px; }
 .trending-slide img { width: 100%; height: 100%; object-fit: cover; display: block; object-position: center; } 
 
 /* --- 화살표 감싼 컨테이너 --- */
-.slider-controls02 { position: absolute; display: flex; align-items: center; justify-content: space-between; gap: 20px; top:38%; margin-bottom: 8rem; width: 100%; height: 15px; z-index: 50; } 
+.slider-controls02 { position: absolute; display: flex; align-items: center; justify-content: space-between; gap: 20px; top:38%; margin-bottom: 8rem; width: 100%; height: 15px; z-index: 500; } 
 
 /* --- 화살표 버튼 스타일 --- */
 .custom-prev02, .custom-next02 { top: 50px; background:rgba(255, 255, 255, 0.7); border: none; cursor: pointer; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; } 
@@ -131,7 +131,11 @@ section { margin: 0 24px; }
 
 .gift-tx-container { width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column; } 
 .gift-name { color: var(--Gray-90); width: 24%; margin: 20px; display: flex; text-align: center; font-size: 1.8rem; font-weight: 500; letter-spacing: calc(1.8rem * -0.025); line-height: 140%; } 
-.gift-bt { cursor: pointer; width: 133px; height: 41px; font-size: 1.6rem; letter-spacing: calc(1.6rem * -0.025); line-height: 140%; border: 1px solid var(--Crystal-Teal); background-color: var(--ivoryGlow); border-radius: 0; display: flex; justify-content: center; align-items: center; color: var(--Crystal-Teal); transition: background-color 0.3s ease, color 0.3s ease; } 
+.gift-bt { cursor: pointer; width: 133px; height: 41px; font-size: 1.6rem; letter-spacing: calc(1.6rem * -0.025); line-height: 140%; border: 1px solid var(--Crystal-Teal); background-color: var(--ivoryGlow); border-radius: 0; display: flex; justify-content: center; align-items: center; color: var(--Crystal-Teal); transition: background-color 0.4s ease, color 0.4s ease; }
+.gift-bt:hover{
+    background-color: var(--Crystal-Teal);
+    color: var(--White);
+} 
 
 .gift-caption { display: none; } 
 /*-------------------------------------------footer---*/
