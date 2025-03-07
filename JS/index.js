@@ -33,7 +33,7 @@ $(document).ready(function () {
     dots: false,
     arrows: true,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2000,
     fade: true,
     speed: 800,
     prevArrow: '<button class="custom-prev"><img src="./img/배너_왼_icon.svg" alt="이전"></button>',
