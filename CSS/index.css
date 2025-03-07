@@ -44,7 +44,7 @@
 
 /* -------------------------------------------------- */
 section { margin: 0 24px; } 
-.content { margin: 5.6rem 0; position: relative; } 
+.content { margin: 9rem 0; position: relative; } 
 .content-name { font-family: "Roboto Slab", serif; color: var(--Crystal-Teal); font-size: 2.4rem; font-weight: 400; line-height: 140%; margin-bottom: 1.3rem; } 
 .content-text { color: var(--Gray-90); font-size: 1.8rem; font-weight: 400; line-height: 140%; letter-spacing: calc(1.8rem * -0.025); margin-bottom: 1.7rem; } 
 /*---------------------------------------------- card01 */
@@ -141,7 +141,7 @@ footer >ul >li { font-size: 1.4rem; }
 /*TODO:-----------------------------------------태블릿-----*/
 
 @media screen and (min-width: 768px) { section { margin: 0 48px; } 
- .content { margin: 9rem 0; } 
+ .content { margin: 15rem 0 !important; } 
  .gnb { padding:48px; } 
 
  .gnb-scroll ul { right: 48px; } 
