@@ -33,11 +33,12 @@ $(document).ready(function () {
     dots: false,
     arrows: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1000,
     fade: true,
     speed: 800,
-    prevArrow: $(".custom-prev"), // 기존 버튼을 그대로 사용
-    nextArrow: $(".custom-next"),
+    prevArrow: '<button class="custom-prev"><img src="./img/배너_왼_icon.svg" alt="이전"></button>',
+    nextArrow: '<button class="custom-next"><img src="./img/배너_오_icon.svg" alt="다음"></button>',
+
   });
 
   // ✅ 슬라이드 변경 시 현재 슬라이드 번호 업데이트
@@ -90,17 +91,33 @@ $(".wh-like-icon, .like-icon").click(function () {
 // -----------------------------------------트렌딩 배너 플러그인
 
 
-$(".trending-slide").slick({
-  dots: false,
-  arrows: true,
-  autoplay: true,
-  autoplaySpeed: 1700,
-  fade: true,
-  speed: 800,
-  prevArrow: $(".custom-prev"),
-  nextArrow: $(".custom-next"),
-});
+var slider = $(".trending-slide");
 
+  // ✅ 슬라이더 초기화 (도트 활성화)
+  slider.slick({
+    dots: true, // 도트 추가
+    arrows: true, // 화살표 활성화
+    autoplay: true,
+    autoplaySpeed: 1500,
+    fade: true,
+    speed: 800,
+    prevArrow: '<button class="custom-prev-tr"><img src="./img/배너_왼_icon.svg" alt="이전"></button>',
+    nextArrow: '<button class="custom-next-tr"><img src="./img/배너_오_icon.svg" alt="다음"></button>',
+  });
+    // ✅ 도트와 멈춤 버튼을 감쌀 부모 컨테이너 생성
+    $(".slick-dots").wrap('<div class="dots-container"></div>');
 
+  // ✅ 멈춤 버튼을 도트 옆에 추가 (이미지 사용)
+  $(".slick-dots").after('<button class="playbtn-tr"><img src="./img/stop_icon.svg" alt="멈춤"></button>');
+
+  // ✅ 멈춤 버튼 기능 추가 (이미지 변경)
+  let isPlaying = true;
+  $(document).on("click", ".playbtn-tr", function () {
+    isPlaying = !isPlaying;
+    slider.slick(isPlaying ? "slickPlay" : "slickPause");
+
+    // 버튼 이미지 변경 (멈춤 → 재생)
+    $(this).html(isPlaying ? '<img src="./img/stop_icon.svg" alt="멈춤">' : '<img src="./img/play_icon.svg" alt="재생">');
+  });
     // --------------------------------------------------------
   });
