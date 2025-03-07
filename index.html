@@ -75,7 +75,15 @@
         <div>
           <a href="index.html"><p class="pc-logo">Viare</p></a>
         </div>
-        <ul>
+        <ul class="pc-gnb-text">
+          <li><a href="#none">커트러리</a></li>
+          <li><a href="#none">파스타볼</a></li>
+          <li><a href="#none">접시</a></li>
+          <li><a href="#none">컵/티웨어</a></li>
+          <li><a href="#none">보관용기</a></li>
+          <li><a href="#none">조리도구</a></li>
+        </ul>
+        <ul class="pc-gnb-icon">
           <li>
             <a href="#none"><img src="./img/돋보기icon.svg" alt="검색" /></a>
           </li>
@@ -96,20 +104,75 @@
       </div>
       <!-- 배너 슬라이드 -->
       <div class="banner-slider">
-        <div>
-          <img src="./img/full banner.jpg" alt="배너" />
+        <!-- ---------------------------------------크리스탈컬렉션----------->
+        <div class="banner-container">
+          <div class="main-img">
+            <img src="./img/full banner01.jpg" alt="배너" />
+          </div>
+
+          <div class="banner-right">
+            <p class="banner-text01 bannertx">신제품 비아레 크리스탈 컬렉션</p>
+            <p class="banner-text02 bannertx">투명함 속에서 빛나는 감각</p>
+            <p class="banner-text03 bannertx">
+              VIARE가 새롭게 선보이는 섬세한 글라스 컬렉션으로 정교한 투명함과
+              부드러운 곡선, 그리고 빛의 흐름이 어우러져 일상 속의 우아한 여운을
+              표현합니다.
+            </p>
+            <button class="gift-bt">더 알아보기 &nbsp;&nbsp;></button>
+          </div>
         </div>
-        <div>
-          <img src="./img/full banner02.jpg" alt="배너" />
+        <!-- ------------------------------------------------------ 02-->
+        <div class="banner-container">
+          <div>
+            <img src="./img/full banner02.jpg" alt="배너" />
+          </div>
+          <div class="banner-right">
+            <p class="banner-text01 bannertx">
+              비아레 글라스웨어의 새로운 감각
+            </p>
+            <p class="banner-text02 bannertx">빛과 텍스처의 조화</p>
+            <p class="banner-text03 bannertx">
+              VIARE가 선보이는 감각적인 크리스탈 유리잔 컬렉션으로, 투명한
+              유리에 섬세한 패턴을 더해 우아함을 극대화하였습니다. 자연스러운
+              빛의 반사와 텍스처가 만나 특별한 테이블을 연출합니다.
+            </p>
+            <button class="gift-bt">더 알아보기 &nbsp;&nbsp;></button>
+          </div>
         </div>
-        <div>
-          <img src="./img/full banner03.jpg" alt="배너" />
+        <!-- ------------------------------------------------------ 03-->
+        <div class="banner-container">
+          <div>
+            <img class="main03" src="./img/full banner03.jpg" alt="배너" />
+          </div>
+          <div class="banner-right">
+            <p class="banner-text01 bannertx">비아레 크리스탈 커트러리</p>
+            <p class="banner-text02 bannertx">빛을 담은 섬세한 디자인</p>
+            <p class="banner-text03 bannertx">
+              투명한 크리스탈 손잡이와 세련된 실버 마감이 어우러진 VIARE의 유리
+              커트러리 컬렉션. 감각적인 디자인과 실용성을 겸비하여, 일상에서도
+              고급스러운 테이블 스타일을 완성할 수 있습니다.
+            </p>
+            <button class="gift-bt">더 알아보기 &nbsp;&nbsp;></button>
+          </div>
         </div>
-        <div>
-          <img src="./img/full banner04.jpg" alt="배너" />
+        <!-- ------------------------------------------------------ 04-->
+        <div class="banner-container">
+          <div>
+            <img class="main04" src="./img/full banner04.jpg" alt="배너" />
+          </div>
+          <div class="banner-right">
+            <p class="banner-text01 bannertx">비아레 글라스 커피웨어</p>
+            <p class="banner-text02 bannertx">우아한 곡선과 빛의 반사</p>
+            <p class="banner-text03 bannertx">
+              심플하면서도 세련된 디자인의 VIARE 크리스탈 커피웨어는 투명한
+              유리를 통해 빛과 그림자가 조화롭게 어우러집니다. 커피 한 잔의
+              순간을 더욱 감각적으로 즐겨보세요.
+            </p>
+            <button class="gift-bt">더 알아보기 &nbsp;&nbsp;></button>
+          </div>
         </div>
       </div>
-      <!-- 화살표 + 슬라이드 숫자 컨테이너 -->
+      <!-- 화살표 + 슬라이드 숫자 + 플레이버튼 컨테이너 -->
       <div class="slider-controls">
         <button class="custom-prev">
           <img src="./img/배너_왼_icon.svg" alt="이전" />
@@ -117,6 +180,9 @@
         <span class="slick-slide-number">1 / 4</span>
         <button class="custom-next">
           <img src="./img/배너_오_icon.svg" alt="다음" />
+        </button>
+        <button class="playbtn">
+          <img src="./img/stop_icon.svg" alt="멈춤" />
         </button>
       </div>
       <!-- 컨텐츠 박스 -->
@@ -269,7 +335,10 @@
                 <div class="card02">
                   <div>
                     <a href="#none"
-                      ><img class="card02-img" src="./img/trending_02.jpg" alt="빛의 여운 유리잔"
+                      ><img
+                        class="card02-img"
+                        src="./img/trending_02.jpg"
+                        alt="빛의 여운 유리잔"
                     /></a>
                   </div>
                   <div class="card02-text">
@@ -288,7 +357,11 @@
                 </div>
                 <div class="card02">
                   <div>
-                    <img class="card02-img" src="./img/trending_03.jpg" alt="앰버 빛 식탁 세트" />
+                    <img
+                      class="card02-img"
+                      src="./img/trending_03.jpg"
+                      alt="앰버 빛 식탁 세트"
+                    />
                   </div>
                   <div class="card02-text">
                     <p class="card-name">앰버 빛 식탁 세트</p>
