@@ -15,43 +15,6 @@ $(function () {
 });
 
 
-
-// pc gnb 
-
-$(function () {
-  $(".pc-gnb-text li").hover(
-      function () {  
-          $(this).css({
-              "font-weight": "500",
-              "color":"var(--Black)"
-          });
-      },
-      function () {  
-          $(this).css({
-              "font-weight": "400",
-              "color":"var(--Gray-90)"
-          });
-      }
-  );
-});
-
-
-$(function () {
-  $(".pc-gnb-text li").hover(
-      function () {  
-          $(this).css({
-              "font-size": "2.4rem",
-          });
-      },
-      function () {  
-          $(this).css({
-              "font-size": "2.3rem",
-          });
-      }
-  );
-});
-
-
 // aos
 
 AOS.init();
