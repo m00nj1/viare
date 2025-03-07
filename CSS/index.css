@@ -1,5 +1,12 @@
 #page { font-size: 62.5%; width: 100vw; height: auto; margin: 0 auto; background-color: var(--ivoryGlow); } 
 
+/* 처음에 body를 숨김 화면깜빡거림 방지 */
+body {
+    opacity: 0;
+    transition: opacity 0.1s ease-in; /* 딜레이 최소화 */
+  }
+
+  
 /* ------------------------------------메인 배너 슬라이드 영역 */
 
 /* 배너 위에 검은색 그라디언트 오버레이 */

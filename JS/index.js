@@ -1,6 +1,12 @@
 
 $(document).ready(function () {
 
+  // 모든 리소스가 로드된 후 body를 보이게 함  화면깜빡거림 방지
+  window.addEventListener("load", function () {
+    document.body.style.opacity = "1";
+  });
+
+
 // -----------------------------------------gnb 스크롤시 고정
 
 
@@ -74,6 +80,26 @@ $(document).ready(function () {
 
 });
 
+// 접근성
+$(".banner-slider").on("init reInit afterChange", function (event, slick) {
+  $(".slick-slide").each(function () {
+    if ($(this).attr("aria-hidden") === "true") {
+      $(this).attr("inert", "true");
+    } else {
+      $(this).removeAttr("inert");
+    }
+  });
+});
+
+$(".banner-slider").on("init reInit afterChange", function (event, slick) {
+  $(".slick-slide").each(function () {
+    if ($(this).attr("aria-hidden") === "true") {
+      $(this).find("a, button, input, select, textarea").attr("tabindex", "-1");
+    } else {
+      $(this).find("a, button, input, select, textarea").removeAttr("tabindex");
+    }
+  });
+});
 
 // -----------------------------------------------------카드 배너 스크롤
 
