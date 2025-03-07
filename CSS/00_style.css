@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    /* Color styles */
+    --Black: rgba(17, 17, 17, 1);
+    --Gray-90: rgba(70, 70, 70, 1);
+    --Gray-80: rgba(130, 130, 130, 1);
+    --Gray-70: rgba(176, 176, 176, 1);
+    --ivoryGlow: rgba(255, 253, 246, 1);
+    --Crystal-Teal:rgba(18, 112, 141, 1);
+    --White: rgba(255, 255, 255, 1);
+    
+
+
+    /* Text-size styles */
+    --h1: 2.2rem;
+    --h2: 1.8rem;
+    --h3: 1.6rem;
+    --h4: 1.4rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px 설정 */
+}
+
+body {
+    font-family: 'Pretendard-Regular';
+}
+a {text-decoration: none;color: var(--black);}
+li {display: block; list-style-type: none;}
