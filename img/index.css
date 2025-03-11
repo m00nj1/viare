@@ -1,11 +1,11 @@
-#page { font-size: 62.5%; width: 100vw; height: auto; margin: 0 auto; background-color: var(--White); } 
+#page { font-size: 62.5%; width: 100vw; height: auto; margin: 0 auto; background-color: var(--ivoryGlow); } 
 
 
  
 /* ------------------------------------메인 배너 슬라이드 영역 */
 
 /* 배너 위에 검은색 그라디언트 오버레이 */
-.banner-slider::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 40vh; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)); /* 위에서 아래로 점점 사라지는 효과 */
+.banner-slider::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 40vh; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)); /* 위에서 아래로 점점 사라지는 효과 */
  z-index: 1; /* 배너 위로 올라오도록 설정 */ } 
 .banner-slider { cursor: pointer; width: 100%; height: 50vh; position: relative; overflow: hidden; } 
 .banner-slider img { width: 100%; height: 50vh; object-fit: cover; } 
@@ -34,31 +34,31 @@
 
 
 /* -----------------------------------------------searchbox--- */
-.searchbox { position: fixed; left: 0; top: -300vh; margin: 0 auto; width: 100%; height: 100%; overflow: hidden; background-color:var(--White); z-index: 999999 !important; transition: top 0.7s ease-in-out; } 
+.searchbox { position: fixed; left: 0; top: -300vh; margin: 0 auto; width: 100%; height: 100%; overflow: hidden; background-color:var(--ivoryGlow); z-index: 999999 !important; transition: top 0.7s ease-in-out; } 
 .searchbox-icon { display: flex; padding: 24px; justify-content: space-between; align-items: center; } 
-.searchbox-input { margin: 0 24px; padding: 10px; background-color: var(--White); display: flex; height: 44px; border-bottom:1px solid var(--Crystal-Teal); align-items: center; } 
+.searchbox-input { margin: 0 24px; padding: 10px; background-color: var(--ivoryGlow); display: flex; height: 44px; border-bottom:1px solid var(--Crystal-Teal); align-items: center; } 
 .searchbox-input img { width: 24px; height: 24px; } 
 .searchbox-input input { background: none; border: none; margin-left: 10px; font-size: 16px; letter-spacing: calc(16px * -0.025); width: 100%; height: 100%; color: var(--Gray-80); } 
 .searchbox-input input:focus { outline: none; color: var(--Black); } 
 .searchbox ul { margin:24px; } 
 .searchbox ul li { font-size: 16px; letter-spacing: calc(16px * -0.025); line-height: 200%; color: var(--Gray-90); } 
 .b { font-weight: 600; } 
-body.no-scroll { overflow: hidden; /* ✅ 검색창이 열릴 때 스크롤 제거 */ } 
+body.no-scroll { overflow: hidden; /* ✅ 검색창이 열릴 때 스크롤 제거 */}
 
 
 /* -----------------------------------------------list-- */
 
-.listbox { position: fixed; left: 0; top: -300vh; margin: 0 auto; width: 100%; height: 100%; overflow: hidden; background-color:var(--White); z-index: 999999 !important; transition: top 0.7s ease-in-out; } 
+.listbox { position: fixed; left: 0; top: -300vh; margin: 0 auto; width: 100%; height: 100%; overflow: hidden; background-color:var(--ivoryGlow); z-index: 999999 !important; transition: top 0.7s ease-in-out; } 
 .listbox-icon { display: flex; padding: 24px; justify-content: space-between; align-items: center; } 
 .listbox-ul { padding: 0 24px; color: var(--Crystal-Teal); } 
 .listbox-ul li a { display: flex; justify-content: space-between; align-items: center; font-size: 18px; font-weight: 600; line-height: 300%; letter-spacing: calc(18px * -0.025); } 
 .listbox-ul li img { object-fit: cover; width: 20px; } 
-.listbox-ul-sub { padding-left: 14px; color: var(--Gray-90); display: none; } 
+.listbox-ul-sub { padding-left: 14px; color: var(--Gray-90); display: none;} 
 .listbox-ul-sub li a { font-size: 16px; font-weight: 400; line-height: 200%; letter-spacing: calc(16px * -0.025); } 
-.listbox-ul-sub li a:hover { font-weight: 600; text-decoration: none; } 
+.listbox-ul-sub li a:hover { font-weight: 600; text-decoration: none;}
 .listbox-ul li.open .listbox-ul-sub { display: block; } 
-.list-arrow { transition: transform 0.3s ease; } 
-.listbox-ul li.open .list-arrow { transform: rotate(90deg); } 
+.list-arrow{transition: transform 0.3s ease;}
+.listbox-ul li.open .list-arrow{ transform: rotate(90deg);}
 /* -----------------------------------------------gnb--- */
 
 .gnb { width: 100%; padding:24px; display: flex; justify-content: space-between; align-items: center; position: absolute; top: 0; left: 0; z-index: 100; } 
@@ -71,7 +71,7 @@ body.no-scroll { overflow: hidden; /* ✅ 검색창이 열릴 때 스크롤 제�
  
 /* -----------------------------------------------gnb-scroll-- */
 
-.gnb-scroll { height: 60px; width: 100%; padding:14px 24px 14px 24px; display: flex; justify-content: space-between; align-items: center; position: relative; position: fixed; top: 0; left: 0; z-index: 9999; background-color: var(--White); box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); display: none; } 
+.gnb-scroll { height: 60px; width: 100%; padding:14px 24px 14px 24px; display: flex; justify-content: space-between; align-items: center; position: relative; position: fixed; top: 0; left: 0; z-index: 9999; background-color: var(--ivoryGlow); box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); display: none; } 
 .logo-scroll
  {
  font-family: "Roboto Slab", serif; font-size: 2.4rem; width: 100%; color: var(--Crystal-Teal); } 
@@ -81,7 +81,8 @@ body.no-scroll { overflow: hidden; /* ✅ 검색창이 열릴 때 스크롤 제�
 
 /* ----------------------------------------------pc ver.-gnb--- */
 .pc-gnb { display: none; } 
-/* .pc-gnb-sub { display: none; } */
+
+.pc-gnb-text li:hover { font-weight: 500; color: var(--Black); font-size: 2.4rem; } 
 
 
 /* -------------------------------------------------- */
@@ -102,7 +103,7 @@ section { margin: 0 24px; }
  padding-bottom: 35px; } 
 
  /* ✅ 스크롤바 스타일 (크롬, 사파리) */
-.card01-section::-webkit-scrollbar { height: 2px; /* 스크롤바 높이 */ } 
+.card01-section::-webkit-scrollbar { height: 2px; /* 스크롤바 높이 */}
  .card01-section::-webkit-scrollbar-thumb { background: var(--Crystal-Teal); cursor: pointer; } 
  .card01-section::-webkit-scrollbar-track { background: transparent; } 
 
@@ -168,7 +169,7 @@ section { margin: 0 24px; }
 /* 도트 스타일 */
 .slick-dots { display: flex; gap: 10px; list-style: none; padding: 0; margin: 0; position: absolute; left:-30px; } 
  
- .slick-dots li { width: 10px; height: 10px; background: var(--Black); opacity: 0.7; border-radius: 50%; cursor: pointer; transition: background 0.3s; text-indent: -999999px; /* 숫자 숨기기 */ } 
+ .slick-dots li { width: 10px; height: 10px; background: var(--Black); opacity: 0.7; border-radius: 50%; cursor: pointer; transition: background 0.3s; text-indent: -999999px; /* 숫자 숨기기 */}
  
  .slick-dots .slick-active { background:var(--White); } 
  
@@ -200,7 +201,7 @@ section { margin: 0 24px; }
 
 .gift-tx-container { width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column; } 
 .gift-name { color: var(--Gray-90); width: 24%; margin: 20px; display: flex; text-align: center; font-size: 1.8rem; font-weight: 500; letter-spacing: calc(1.8rem * -0.025); line-height: 140%; } 
-.gift-bt { cursor: pointer; width: 133px; height: 41px; font-size: 1.6rem; letter-spacing: calc(1.6rem * -0.025); line-height: 140%; border: 1px solid var(--Crystal-Teal); background-color: var(--White); border-radius: 0; display: flex; justify-content: center; align-items: center; color: var(--Crystal-Teal); transition: background-color 0.4s ease, color 0.4s ease; } 
+.gift-bt { cursor: pointer; width: 133px; height: 41px; font-size: 1.6rem; letter-spacing: calc(1.6rem * -0.025); line-height: 140%; border: 1px solid var(--Crystal-Teal); background-color: var(--ivoryGlow); border-radius: 0; display: flex; justify-content: center; align-items: center; color: var(--Crystal-Teal); transition: background-color 0.4s ease, color 0.4s ease; } 
 .gift-bt:hover { background-color: var(--Crystal-Teal); color: var(--White); } 
 
 .gift-caption { display: none; } 
@@ -244,37 +245,13 @@ footer { padding: 40px 48px 80px 48px; }
 @media screen and (min-width: 1024px) { section { margin: 0 100px; } 
 
  /* ----------------------------------pc-gnb-- */
-.pc-gnb { display: flex; width: 100%; padding: 32px 100px; align-items: center; position: absolute; top: 0; left: 0; position: fixed; z-index: 99999; background-color:var(--White); height: 80px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); } 
-.pc-logo p { font-family: "Roboto Slab", serif; font-size: 24px; color: var(--Crystal-Teal); } 
-.pc-logo { display: flex; align-items: center; width: 80px; } 
-.pc-gnb-text {  display: flex; align-items: center; width: 100%; margin-left: 4rem; letter-spacing: calc(20px * -0.025); color: var(--Gray-90); } 
-.pc-gnb-text li {display: flex; align-items: center; padding-left: 30px; position: relative; line-height: 140%;} 
-.pc-gnb-text li a { font-size: 16px; text-decoration: none; color: var(--Gray-90); font-weight: 500; position: relative; } 
+.pc-gnb { display: flex; width: 100%; padding: 32px 100px; align-items: center; position: absolute; top: 0; left: 0; position: fixed; z-index: 99999; background-color:var(--ivoryGlow); height: 80px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); } 
+.pc-logo { font-family: "Roboto Slab", serif; font-size: 2.4rem; width: 100%; color: var(--Crystal-Teal); } 
+.pc-gnb-text { margin-left: 4rem; display: flex; line-height: 140%; letter-spacing: calc(1.7rem * -0.025); color: var(--Gray-90); } 
+.pc-gnb-text li { font-size: 2.3rem; padding-left: 30px; font-weight: 500; } 
 .pc-gnb-icon { display: flex; justify-content: flex-end; margin-left: auto; } 
 .pc-gnb-icon li { margin-left: 30px; } 
 .pc-gnb-icon li img { width: 24px; height: 24px; } 
-
- /* 🔥 언더라인 효과 (가상 요소) */
- .pc-gnb-text li a::after { content: ""; position: absolute; left: 50%; /* 가운데에서 시작 */
- bottom: 0; width: 0; height: 2px; background-color: var(--Crystal-Teal); transition: width 0.3s ease-out, left 0.3s ease-out; } 
- .pc-gnb-text li a:hover::after { width: 100%; left: 0; } 
-
- .pc-gnb-sub { display: none; /* 처음에는 숨김 */
- position: absolute; top: 100%; left: 0; background-color: var(--White); opacity: 0.9; width: 120px; /* 드롭다운 너비 */
- padding: 10px 0; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 */}
- 
- .pc-gnb-sub li { padding: 10px 30px; display: block; } 
- 
- .pc-gnb-sub li a { color: var(--Gray-90); font-size: 14px; font-weight: 300; transition: color 0.3s ease; line-height: 140%; letter-spacing: calc(13px * -0.025); } 
- 
- 
- /* ✅ 마우스 오버 시 드롭다운 표시 */
- .pc-gnb-text li:hover .pc-gnb-sub { display: block; animation: dropdownFade 0.3s ease-in-out; } 
- @keyframes dropdownFade { 
- from { opacity: 0; transform: translateY(-30px); } 
- to { opacity: 1; transform: translateY(0); } 
- }
-
 
  .gnb { display: none; } 
  .gnb-scroll { display: none !important; } 

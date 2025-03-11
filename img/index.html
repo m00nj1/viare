@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VIARE | 투명함 속에서 빛나는 감각</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <!-- favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=2">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=2" />
     <!-- aos css-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- 슬라이더 css -->
@@ -18,10 +18,102 @@
     <!-- css -->
     <link rel="stylesheet" href="./CSS/index.css" />
     <link rel="stylesheet" href="./CSS/00_style.css" />
-
   </head>
   <body>
     <div id="page">
+      <!-- search box -->
+      <div class="searchbox">
+        <div class="searchbox-icon">
+          <div>
+            <a href="index.html"><p class="logo-scroll">Viare</p></a>
+          </div>
+          <div>
+            <a href="#none"><img src="./img/x_icon.svg" alt="닫기" /></a>
+          </div>
+        </div>
+        <div class="searchbox-input">
+          <img src="./img/돋보기icon.svg" alt="검색" />
+          <input type="text" placeholder="검색" />
+        </div>
+        <ul>
+          <li class="b">추천 검색어</li>
+          <li>커트러리</li>
+          <li>파스타볼</li>
+          <li>접시</li>
+          <li>컵/티웨어</li>
+        </ul>
+      </div>
+      <!-- list box-->
+      <div class="listbox">
+        <div class="listbox-icon">
+          <div>
+            <a href="index.html"><p class="logo-scroll">Viare</p></a>
+          </div>
+          <div>
+            <a href="#none"><img src="./img/x_icon.svg" alt="닫기" /></a>
+          </div>
+        </div>
+        <ul class="listbox-ul">
+          <li>
+            <a href="#none"
+              >컵/티웨어 <img class="list-arrow" src="./img/더알아보기icon.svg" alt="바로가기"
+            /></a>
+            <ul class="listbox-ul-sub">
+              <li><a href="#none">커피잔</a></li>
+              <li><a href="#none">머그컵</a></li>
+              <li><a href="#none">티팟/저그</a></li>
+              <li><a href="#none">술잔</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#none"
+              >커트러리 <img class="list-arrow" src="./img/더알아보기icon.svg" alt="바로가기"
+            /></a>
+            <ul class="listbox-ul-sub">
+              <li><a href="#none">한식기</a></li>
+              <li><a href="#none">양식기</a></li>
+              <li><a href="#none">디저트</a></li>
+              <li><a href="#none">세트상품</a></li>
+              <li><a href="#none">수저받침/수저통</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none"
+              >파스타볼 <img class="list-arrow" src="./img/더알아보기icon.svg" alt="바로가기"
+            /></a>
+            <ul class="listbox-ul-sub">
+              <li><a href="#none">면기</a></li>
+              <li><a href="#none">파스타볼</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none"
+              >접시 <img class="list-arrow" src="./img/더알아보기icon.svg" alt="바로가기"
+            /></a>
+            <ul class="listbox-ul-sub">
+              <li><a href="#none">찬기</a></li>
+              <li><a href="#none">원형접시</a></li>
+              <li><a href="#none">사각접시</a></li>
+              <li><a href="#none">나눔접시</a></li>
+              <li><a href="#none">기타접시</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none"
+              >보관용기</a>
+          </li>
+          <li>
+            <a href="#none"
+              >조리도구 <img class="list-arrow" src="./img/더알아보기icon.svg" alt="바로가기"
+            /></a>
+            <ul class="listbox-ul-sub">
+              <li><a href="#none">조리도구</a></li>
+              <li><a href="#none">도마</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
       <!-- gnb-->
       <div class="gnb">
         <div>
@@ -80,10 +172,10 @@
           <a href="index.html"><p class="pc-logo">Viare</p></a>
         </div>
         <ul class="pc-gnb-text">
+          <li><a href="#none">컵/티웨어</a></li>
           <li><a href="#none">커트러리</a></li>
           <li><a href="#none">파스타볼</a></li>
           <li><a href="#none">접시</a></li>
-          <li><a href="#none">컵/티웨어</a></li>
           <li><a href="#none">보관용기</a></li>
           <li><a href="#none">조리도구</a></li>
         </ul>
@@ -176,10 +268,9 @@
           </div>
         </div>
       </div>
-      
+
       <!-- 슬라이드 숫자 + 플레이버튼 컨테이너 -->
       <div class="slider-controls">
-        </button>
         <span class="slick-slide-number">1 / 4</span>
         <button class="playbtn">
           <img src="./img/stop_icon.svg" alt="멈춤" />
@@ -188,118 +279,125 @@
       <!-- 컨텐츠 박스 -->
       <section>
         <!-- New Arrivals -->
-         
         <div class="content">
           <h1 class="content-name">New Arrivals</h1>
-          <p class="content-text"
-          >
+          <p class="content-text">
             빛과 투명함을 새롭게 해석한 VIARE의 최신 디자인을 소개합니다.
           </p>
           <div class="card-slider-container">
-            <button class="card-prev"><img src="./img/배너_왼_wh_icon.svg" alt="이전"></button>
-          <!-- 세로형 카드 -->
-          <div class="card01-section">
-            <div class="card01">
-              <div>
-                <div class="wh-like-icon">
-                  <a href="#none"
-                    ><img src="./img/좋아요비활성_wh_icon.svg" alt="좋아요"
-                  /></a>
+            <button class="card-prev">
+              <img src="./img/배너_왼_wh_icon.svg" alt="이전" />
+            </button>
+            <!-- 세로형 카드 -->
+            <div class="card01-section">
+              <div class="card01">
+                <div>
+                  <div class="wh-like-icon">
+                    <a href="#none"
+                      ><img src="./img/좋아요비활성_wh_icon.svg" alt="좋아요"
+                    /></a>
+                  </div>
+                  <img src="./img/빛의여운.jpg" alt="빛의 여운 유리잔" />
                 </div>
-                <img src="./img/빛의여운.jpg" alt="빛의 여운 유리잔" />
+                <div class="card-text">
+                  <p class="card-name">빛의 여운 유리잔 28 cl</p>
+                  <p class="card-color">Clear White-glass</p>
+                  <p class="card-per">30%</p>
+                  <p class="card-won">₩ 11,600</p>
+                </div>
               </div>
-              <div class="card-text">
-                <p class="card-name">빛의 여운 유리잔 28 cl</p>
-                <p class="card-color">Clear White-glass</p>
-                <p class="card-per">30%</p>
-                <p class="card-won">₩ 11,600</p>
+              <div class="card01">
+                <div>
+                  <div class="wh-like-icon">
+                    <a href="#none"
+                      ><img src="./img/좋아요비활성_wh_icon.svg" alt="좋아요"
+                    /></a>
+                  </div>
+                  <img src="./img/빛의조각.jpg" alt="빛의 조각 커트러리 세트" />
+                </div>
+                <div class="card-text">
+                  <p class="card-name">빛의 조각 커트러리 세트</p>
+                  <p class="card-color">Crystal Aqua-glass</p>
+                  <p class="card-per">40%</p>
+                  <p class="card-won">₩ 22,400</p>
+                </div>
+              </div>
+              <div class="card01">
+                <div>
+                  <div class="wh-like-icon">
+                    <a href="#none"
+                      ><img src="./img/좋아요비활성_wh_icon.svg" alt="좋아요"
+                    /></a>
+                  </div>
+                  <img
+                    src="./img/로제빛.jpg"
+                    alt="로제 빛 머금은 유리잔 세트"
+                  />
+                </div>
+                <div class="card-text">
+                  <p class="card-name">로제 빛 머금은 유리잔 세트</p>
+                  <p class="card-color">Soft Rose-glass</p>
+                  <p class="card-per">24%</p>
+                  <p class="card-won">₩ 32,400</p>
+                </div>
+              </div>
+              <div class="card01">
+                <div>
+                  <div class="wh-like-icon">
+                    <a href="#none"
+                      ><img src="./img/좋아요비활성_wh_icon.svg" alt="좋아요"
+                    /></a>
+                  </div>
+                  <img src="./img/노을.jpg" alt="노을 담은 글라스 세트" />
+                </div>
+                <div class="card-text">
+                  <p class="card-name">노을 담은 글라스 세트</p>
+                  <p class="card-color">Warm Beige-glass</p>
+                  <p class="card-per">10%</p>
+                  <p class="card-won">₩ 21,800</p>
+                </div>
+              </div>
+              <div class="card01">
+                <div>
+                  <div class="wh-like-icon">
+                    <a href="#none"
+                      ><img src="./img/좋아요비활성_wh_icon.svg" alt="좋아요"
+                    /></a>
+                  </div>
+                  <img src="./img/blue.jpg" alt="블루 크리스탈 볼 세트" />
+                </div>
+                <div class="card-text">
+                  <p class="card-name">블루 크리스탈 볼 세트</p>
+                  <p class="card-color">Crystal Blue-glass</p>
+                  <p class="card-per">20%</p>
+                  <p class="card-won">₩ 27,600</p>
+                </div>
+              </div>
+              <div class="card01">
+                <div>
+                  <div class="wh-like-icon">
+                    <a href="#none"
+                      ><img src="./img/좋아요비활성_wh_icon.svg" alt="좋아요"
+                    /></a>
+                  </div>
+                  <img
+                    src="./img/핑크빛글라스.jpg"
+                    alt="은은한 핑크빛 글라스 세트"
+                  />
+                </div>
+                <div class="card-text">
+                  <p class="card-name">은은한 핑크빛 글라스 세트</p>
+                  <p class="card-color">Soft Pink-glass</p>
+                  <p class="card-per">15%</p>
+                  <p class="card-won">₩ 24,900</p>
+                </div>
               </div>
             </div>
-            <div class="card01">
-              <div>
-                <div class="wh-like-icon">
-                  <a href="#none"
-                    ><img src="./img/좋아요비활성_wh_icon.svg" alt="좋아요"
-                  /></a>
-                </div>
-                <img src="./img/빛의조각.jpg" alt="빛의 조각 커트러리 세트" />
-              </div>
-              <div class="card-text">
-                <p class="card-name">빛의 조각 커트러리 세트</p>
-                <p class="card-color">Crystal Aqua-glass</p>
-                <p class="card-per">40%</p>
-                <p class="card-won">₩ 22,400</p>
-              </div>
-            </div>
-            <div class="card01">
-              <div>
-                <div class="wh-like-icon">
-                  <a href="#none"
-                    ><img src="./img/좋아요비활성_wh_icon.svg" alt="좋아요"
-                  /></a>
-                </div>
-                <img src="./img/로제빛.jpg" alt="로제 빛 머금은 유리잔 세트" />
-              </div>
-              <div class="card-text">
-                <p class="card-name">로제 빛 머금은 유리잔 세트</p>
-                <p class="card-color">Soft Rose-glass</p>
-                <p class="card-per">24%</p>
-                <p class="card-won">₩ 32,400</p>
-              </div>
-            </div>
-            <div class="card01">
-              <div>
-                <div class="wh-like-icon">
-                  <a href="#none"
-                    ><img src="./img/좋아요비활성_wh_icon.svg" alt="좋아요"
-                  /></a>
-                </div>
-                <img src="./img/노을.jpg" alt="노을 담은 글라스 세트" />
-              </div>
-              <div class="card-text">
-                <p class="card-name">노을 담은 글라스 세트</p>
-                <p class="card-color">Warm Beige-glass</p>
-                <p class="card-per">10%</p>
-                <p class="card-won">₩ 21,800</p>
-              </div>
-            </div>
-            <div class="card01">
-              <div>
-                <div class="wh-like-icon">
-                  <a href="#none"
-                    ><img src="./img/좋아요비활성_wh_icon.svg" alt="좋아요"
-                  /></a>
-                </div>
-                <img src="/img/blue.jpg" alt="블루 크리스탈 볼 세트" />
-              </div>
-              <div class="card-text">
-                <p class="card-name">블루 크리스탈 볼 세트</p>
-                <p class="card-color">Crystal Blue-glass</p>
-                <p class="card-per">20%</p>
-                <p class="card-won">₩ 27,600</p>
-              </div>
-            </div>
-            <div class="card01">
-              <div>
-                <div class="wh-like-icon">
-                  <a href="#none"
-                    ><img src="./img/좋아요비활성_wh_icon.svg" alt="좋아요"
-                  /></a>
-                </div>
-                <img src="./img/핑크빛글라스.jpg" alt="은은한 핑크빛 글라스 세트" />
-              </div>
-              <div class="card-text">
-                <p class="card-name">은은한 핑크빛 글라스 세트</p>
-                <p class="card-color">Soft Pink-glass</p>
-                <p class="card-per">15%</p>
-                <p class="card-won">₩ 24,900</p>
-              </div>
-            </div>
+            <button class="card-next">
+              <img src="./img/배너_오_wh_icon.svg" alt="다음" />
+            </button>
           </div>
-        
-        <button class="card-next"><img src="./img/배너_오_wh_icon.svg" alt="다음"></button>
-      </div>
-    </div>
+        </div>
 
         <!-- Products -->
         <div class="content">
@@ -354,16 +452,6 @@
               <div><img src="./img/trending_01-02.jpg" alt="trending" /></div>
               <div><img src="./img/trending_01-03.jpg" alt="trending" /></div>
             </div>
-
-            <!--슬라이드 화살표 컨테이너 -->
-            <!-- <div class="slider-controls02">
-              <button class="custom-prev02">
-                <img src="./img/배너_왼_icon.svg" alt="이전" />
-              </button>
-              <button class="custom-next02">
-                <img src="./img/배너_오_icon.svg" alt="다음" />
-              </button>
-            </div> -->
             <!-- 가로형 카드 -->
             <div class="card02-section">
               <div class="card02-container">
@@ -448,8 +536,8 @@
                   data-aos-easing="ease-in-sine"
                   class="gift-caption"
                   >맑은 바다의 투명함을 담은 유리볼 세트입니다.<br />섬세한
-                  아쿠아 컬러와 부드러운 곡선 디자인으로 테이블 위에 신선한
-                  감각을 더해보세요.</span
+                  아쿠아 컬러와 부드러운 디자인으로 테이블 위 신선한 감각을
+                  더해보세요.</span
                 >
                 <button class="gift-bt">더 알아보기 &nbsp;&nbsp;></button>
               </div>
@@ -561,7 +649,7 @@
         </div>
       </footer>
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- 슬라이더 js -->
     <script
       type="text/javascript"
