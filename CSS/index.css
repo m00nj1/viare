@@ -46,15 +46,15 @@
 body.no-scroll { overflow: hidden; /* ✅ 검색창이 열릴 때 스크롤 제거 */ } 
 
 
-/* -----------------------------------------------list-- */
+/* -----------------------------------------------list box-- */
 
 .listbox { position: fixed; left: 0; top: -300vh; margin: 0 auto; width: 100%; height: 100%; overflow: hidden; background-color:var(--White); z-index: 999999 !important; transition: top 0.7s ease-in-out; } 
 .listbox-icon { display: flex; padding: 24px; justify-content: space-between; align-items: center; } 
 .listbox-ul { padding: 0 24px; color: var(--Crystal-Teal); } 
-.listbox-ul li a { display: flex; justify-content: space-between; align-items: center; font-size: 18px; font-weight: 600; line-height: 300%; letter-spacing: calc(18px * -0.025); } 
+.listbox-ul li a { display: flex; justify-content: space-between; align-items: center; font-size: 18px; font-weight: 500; line-height: 300%; letter-spacing: calc(18px * -0.025); } 
 .listbox-ul li img { object-fit: cover; width: 20px; } 
 .listbox-ul-sub { padding-left: 14px; color: var(--Gray-90); display: none; } 
-.listbox-ul-sub li a { font-size: 16px; font-weight: 400; line-height: 200%; letter-spacing: calc(16px * -0.025); } 
+.listbox-ul-sub li a { font-size: 16px; font-weight: 500; line-height: 250%; letter-spacing: calc(16px * -0.025); } 
 .listbox-ul-sub li a:hover { font-weight: 600; text-decoration: none; } 
 .listbox-ul li.open .listbox-ul-sub { display: block; } 
 .list-arrow { transition: transform 0.3s ease; } 
@@ -117,7 +117,7 @@ section { margin: 0 24px; }
 .card-text p { line-height: 140%; } 
 .card-name { color: var(--Black); font-size: 1.6rem; letter-spacing: calc(1.6rem * -0.025); line-height: 140%; } 
 .card-color { color: var(--Gray-80); font-size: 1.6rem; margin-bottom: 20px; line-height: 140%; } 
-.card-text >.card-per { color: var(--Crystal-Teal); font-size: 1.6rem; font-weight: 600; margin-bottom: 20px; position: absolute; } 
+.card-text >.card-per { color: var(--Sunset-Orange); font-size: 1.6rem; font-weight: 600; margin-bottom: 20px; position: absolute; } 
 .card-text >.card-won { color: var(--Black); font-size: 1.6rem; font-weight: 600; margin-bottom: 20px; position: absolute; left: 65px; } 
 
 
@@ -186,7 +186,7 @@ section { margin: 0 24px; }
 
 .like-icon img { width: 20px; height: 20px; } 
 
-.card02-text .card-per { color: var(--Crystal-Teal); font-size: 1.6rem; font-weight: 600; display:inline-block; margin-top: 15px; } 
+.card02-text .card-per { color: var(--Sunset-Orange); font-size: 1.6rem; font-weight: 600; display:inline-block; margin-top: 15px; } 
 .card02-text .card-won { color: var(--Black); font-size: 1.6rem; font-weight: 600; margin-left: 10px; display: inline-block; } 
 /*----------------------------------------------gift */
 .gift-container { width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-bottom: 50px; } 
@@ -256,7 +256,7 @@ footer { padding: 40px 48px 80px 48px; }
 
  /* 🔥 언더라인 효과 (가상 요소) */
  .pc-gnb-text li a::after { content: ""; position: absolute; left: 50%; /* 가운데에서 시작 */
- bottom: 0; width: 0; height: 2px; background-color: var(--Crystal-Teal); transition: width 0.3s ease-out, left 0.3s ease-out; } 
+ bottom: -2px; width: 0; height: 2px; background-color: var(--Crystal-Teal); transition: width 0.3s ease-out, left 0.3s ease-out; } 
  .pc-gnb-text li a:hover::after { width: 100%; left: 0; } 
 
  .pc-gnb-sub { display: none; /* 처음에는 숨김 */
@@ -265,7 +265,7 @@ footer { padding: 40px 48px 80px 48px; }
  
  .pc-gnb-sub li { padding: 10px 30px; display: block; } 
  
- .pc-gnb-sub li a { color: var(--Gray-90); font-size: 14px; font-weight: 300; transition: color 0.3s ease; line-height: 140%; letter-spacing: calc(13px * -0.025); } 
+ .pc-gnb-sub li a { color: var(--Gray-90); font-size: 14px; font-weight: 300; transition: color 0.3s ease; line-height: 140%; letter-spacing: calc(14px * -0.025); } 
  
  
  /* ✅ 마우스 오버 시 드롭다운 표시 */
