@@ -1,0 +1,893 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+
+.submenu{
+    width: 100%;
+    background-color:var(--White);
+    display: flex;
+    color: var(--Gray-70);
+    padding: 10px 24px 12px 24px;
+}
+
+.submenu a {
+    font-size: 1.4rem;
+    color:var(--Gray-80);  
+}
+
+.gnb-detail { width: 100%; padding:24px; display: flex; justify-content: space-between; 
+    align-items: center; background-color: var(--Ivory-Glow);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    z-index: 100; margin-bottom: 8px;} 
+
+.gnb-detail ul { display: flex; } 
+.gnb-detail ul li { margin-left:20px; } 
+.gnb-detail ul li img { width: 24px; height: 24px; } 
+
+.detail-container{
+    display: contents;
+    width: 100%;
+}
+
+.detail-slide{
+   width: 100%;
+   height: 393px;
+   background-color: aquamarine; 
+   padding-top: 10px;
+}
+
+.detail-section{
+    padding:2.4rem 2.4rem 0 2.4rem;
+}
+
+.detail-name>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detail-name>ul>ul{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.detail-name li{
+    font-size: 2.4rem;
+    display: flex;
+    color: var(--Black);
+    letter-spacing: calc(2.4rem * -0.025); line-height: 100%;
+}
+
+.ht-txt {
+    font-size: 1.4rem;
+    color: var(--Crystal-Teal);
+    padding-bottom: 1.4rem;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 34px;
+}
+
+.ht-icon{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+
+
+.dt-caption{
+    font-size: 1.8rem;
+    letter-spacing: calc(1.8rem * -0.025); line-height: 140%;
+    color: var(--Gray-90);
+    padding-bottom: 2.4rem;
+}
+
+.discount{
+    text-decoration: line-through;
+    color: var(--Gray-80);
+    font-size: 1.8rem;
+    padding-bottom: 8px;
+}
+.price{
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+}
+.price-per{
+    font-size: 2.2rem;
+    color: var(--Sunset-Orange);
+    font-weight: 600;
+}
+
+.price-won{
+    font-size: 2.2rem;
+    color: var(--Black);
+    font-weight: 600;
+}
+
+.star{
+    display: flex;
+    gap: 4px;
+    padding-bottom: 1rem;
+}
+.star li{
+    font-size: 1.8rem;
+    color: var( --Crystal-Teal);
+}
+
+
+.num_pay-container{
+    display: none;
+}
+
+
+.detail-tab{
+    background-color: var(--White);
+    border-bottom: 1px solid var(--Gray-70);
+    width: 100%;
+    height: 53px;
+    display: flex;
+    padding: 0 24px;
+
+}
+/* 스크롤시 고정 */
+.fixed-tab {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: top 0.3s ease;
+  }
+
+
+.tab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--Gray-90);
+    width: calc(100% *4);
+}
+
+.tab a{font-size: 1.8rem;
+    letter-spacing: calc(1.8rem * -0.025); line-height: 140%;}
+
+.tab:active {
+    color: var(--Crystal-Teal);
+    border-bottom: 2px solid var(--Crystal-Teal);
+    font-weight: 600;
+}
+
+.detail-img-con {
+    width: 100%;
+    height: 1000px;
+    margin: 5rem 0;
+}
+.detail-img {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100%;
+}
+
+/* ------------------------------상세정보--- */
+.dt-all-con {
+    padding: 0 24px;
+}
+
+.info{
+    border-top: 5px solid var(--Gray-50);
+    border-bottom: 5px solid var(--Gray-50);
+    padding: 3rem 0;
+}
+.info p{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--Gray-90);
+    letter-spacing: calc(1.8rem * -0.025); line-height: 140%;
+}
+.info-tb{
+    padding-top: 3rem;
+}
+
+.info-tb tr{
+    height: 30px;
+}
+
+.info-tb tr th{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--Gray-80);
+    text-align: left;
+}
+.info-tb tr td{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--Gray-90);
+    padding-left: 8rem;
+}
+
+/* ------------------------------후기--- */
+.review {
+    width: 100%;
+    padding-top: 3rem;
+}
+.review-t-con{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2.4rem;
+}
+.review-t, .review-n{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.review-t {
+    color: var(--Gray-90);
+    letter-spacing: calc(1.8rem * -0.025); line-height: 140%;
+}
+.review-n{
+    color: var(--Crystal-Teal);
+    padding-left: 4px;
+}
+
+.review-t2{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--Crystal-Teal);
+    letter-spacing: calc(1.6rem * -0.025); line-height: 140%;
+    cursor: pointer;
+}
+
+.review-box {
+    background-color: var(--Gray-50);
+    width: 100%;
+    height: 138px;
+    display: flex;
+    align-items: center;
+    padding: 22px 24px;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    justify-content: center;
+}
+
+.rv-n{
+    color: var(--Gray-90);
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 4px;
+}
+
+
+
+.review-bar-con span {
+    font-size: 1.2rem;
+    font-weight: 500;
+
+
+}
+.bar-con{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: flex-start;
+}
+
+.review-bar{
+    width: 102px;
+    height: 5px;
+    background-color: var(--Gray-70);
+    border-radius: 4px;
+}
+
+.review-bar5fill,.review-bar4fill,.review-bar3fill{
+
+    height: 100%;
+    background-color: var(--Crystal-Teal);
+    border-radius: 4px;
+}
+.review-bar5fill{
+    width: 75%;
+}
+.review-bar4fill{
+    width: 20%;
+}
+.review-bar3fill{
+    width: 5%;
+}
+
+.rebar-n5,.rebar-p5 {
+    color: var(--Crystal-Teal);
+    text-align: left;
+    width: 20px;
+}
+.rebar-n,.rebar-p{
+    color:var(--Gray-70);
+    text-align: left;
+    width: 20px;
+}
+.re02-text {
+    display: flex;
+    gap: 24px;
+    margin-top: 1.4rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--Gray-70);
+}
+
+.re02-text span {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--Gray-90);
+    letter-spacing: calc(1.4rem * -0.025); line-height: 140%;
+    cursor: pointer;
+}
+.re02-text span:nth-child(1) {
+    color: var(--Crystal-Teal);
+}
+
+.rv-star{
+    padding-top: 3rem;
+    margin-bottom: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.2rem;
+    color: var(--Gray-90);
+    border-top: 2px solid var(--Gray-50);
+}
+.tx-con{
+    display: flex;
+    align-self: center;
+    gap: 8px;
+    margin-bottom: 2.4rem;
+    
+}
+
+.tx{
+    border: 1px solid var(--Gray-70);
+    font-size: 1.2rem;
+    letter-spacing: calc(1.2rem * -0.025); line-height: 140%;
+    color: var(--Gray-90);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 12px;
+}
+
+.rv-img{
+    height: 142px;
+    width: 142px;
+    margin-bottom: 14px;
+    cursor: pointer;
+}
+
+.rv-img img{
+    object-fit: cover;
+    height: 142px;
+    width: 142px;
+}
+
+.rv-tx {
+    font-size: 1.4rem;
+    color: var(--Gray-90);
+    letter-spacing: calc(1.4rem * -0.025); line-height: 140%;
+    margin:1.4rem 0;
+}
+.rv-tx2 {
+    font-size: 1.2rem;
+    color: var(--Gray-80);
+    letter-spacing: calc(1.2rem * -0.025); line-height: 140%;
+    padding-bottom: 1.4rem;
+
+}
+
+.rv-pg ul{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.rv-pg ul li{
+    font-size: 1.6rem;
+    color: var(--Gray-80);
+    font-weight: 600;
+}
+
+.rv-pg ul li:nth-child(1) {
+    color: var(--Gray-90);
+}
+
+.rv-pg ul li img {
+    margin-top: 3px;
+}
+/* -------------------------문의 */
+
+.qna {
+    width: 100%;
+}
+.qna-t-con{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    border-top: 5px solid var(--Gray-50);
+}
+.qna-t, .qna-n{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.qna-t {
+    color: var(--Gray-90);
+    letter-spacing: calc(1.8rem * -0.025); line-height: 140%;
+}
+.qna-n{
+    color: var(--Crystal-Teal);
+    padding-left: 4px;
+}
+
+.qna-t2{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--Crystal-Teal);
+    letter-spacing: calc(1.6rem * -0.025); line-height: 140%;
+    cursor: pointer;
+}
+
+.qna-p p{
+    font-size: 1.4rem;
+    color: var(--Gray-80);
+}
+.qna-le{
+    font-size: 1.6rem;
+    color: var(--Gray-90);
+}
+.qna-leri{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin: 8px 0;
+}
+.qna-p span{
+    font-size: 1.4rem;
+    color: var(--Gray-80);
+}
+.qna-co{
+    color: var(--Crystal-Teal) !important;
+}
+.qna-ri img {
+    margin-right: 20px;
+}
+.qna-bt {
+    margin-bottom: 3rem;
+}
+
+
+/* ---------------------------배송/교환/환불 */
+.dv-con {
+    padding-top: 3rem;
+    border-top: 5px solid var(--Gray-50);
+}
+.dv-title{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--Gray-90);
+    letter-spacing: calc(1.8rem * -0.025); line-height: 140%;
+}
+
+.dv tr th,td {
+    font-size: 1.4rem;
+    text-align: left;
+    font-weight: 400;
+}
+
+.dv{
+    margin-top: 3rem;
+}
+
+.dv th{
+    width: 25%;
+    padding-bottom: 12px;
+    color: var(--Gray-80);
+    line-height: 160%;
+    vertical-align: top;
+}
+.dv td{
+    width: 75%;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    color: var(--Gray-90);
+    line-height: 160%;
+    vertical-align: top;
+}
+.dv-st{
+    border-top: 1px solid var(--Gray-70);
+    padding-top: 3rem;
+    margin-top: 1.6rem;
+}
+
+.ret{
+    margin:3rem 0 1.4rem 0;
+    font-size: 1.4rem;
+    color: var(--Gray-80);
+    letter-spacing: calc(1.4rem * -0.025); line-height: 150%;
+}
+
+.dv2 tr th,td{
+    font-size: 1.4rem;
+    text-align: left;
+    letter-spacing: calc(1.4rem * -0.025); line-height: 150%;
+    vertical-align: top;
+    color: var(--Gray-90);
+}
+
+.dv2 td{
+    padding-left: 14px;
+    padding-bottom: 12px;
+}
+
+.dv2 {
+    margin-bottom: 6rem;
+}
+/*  ----------------------------------------bottom fix tab */
+.bottom-fix{
+    width: 100%;
+    height: 96px;
+    background-color: var(--White);
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+}
+.bottom-fix ul{
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--Black);
+}
+.bottom-fix ul li{
+    font-size: 14px;
+}
+.gr{
+    color: var(--Crystal-Teal);
+}
+
+.bottom-fix img {
+    width: 20px;
+    height: 20px;
+}
+.bottom-btn{
+    width: 221px;
+    height: 48px;
+    background-color: var(--Crystal-Teal);
+    color: var(--White);
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--Crystal-Teal);
+}
+.bottom-btn-cart{
+    width: 221px;
+    height: 48px;
+    background-color: var(--White);
+    color: var(--Crystal-Teal);
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--Crystal-Teal);
+    display: none;
+}
+
+.pc-right {
+    display: none;
+}
+
+
+/*TODO:-----------------------------------------태블릿-----*/
+
+@media screen and (min-width: 768px) { 
+
+    .gnb-detail { width: 100%; padding:28px 48px; display: flex; justify-content: space-between; 
+        align-items: center; background-color: var(--Ivory-Glow);
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+        z-index: 100; margin-bottom: 8px;} 
+
+
+    .submenu{
+        width: 100%;
+        background-color:var(--White);
+        display: flex;
+        color: var(--Gray-70);
+        padding: 10px 48px 12px 48px;
+    }
+
+
+    .detail-slide{
+        height: 744px;
+        padding-top: 10px;
+     }
+
+     
+/* --- 화살표 버튼 스타일 --- */
+.custom-prev,
+.custom-next { position: absolute; top: 50%; transform: translateY(-50%); z-index: 10; transform: scale(3); opacity: 35%; background: none; border: none; cursor: pointer; transition: opacity 0.3s ease; } 
+.custom-prev { left: 30px; } 
+.custom-next { right: 30px; } 
+.custom-prev:hover,
+.custom-next:hover { opacity: 0.8; } 
+
+
+
+
+     .detail-section{
+        padding: 3.5rem 4.8rem;
+    }
+        
+
+    .detail-img {
+        padding: 48px;
+    }
+
+    .bottom-btn-con{
+        display: flex;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .bottom-btn{
+        width:50%;
+    }
+        
+    .bottom-btn-cart{
+        display: flex;
+        width: 50%;
+    }
+
+    .bottom-fix>ul{
+        display: none;}
+
+    .bottom-fix {
+        padding: 48px;
+    }
+
+    .detail-img-con{
+        padding: 0 4.8rem;
+    }
+    
+    .dt-all-con {
+        padding: 0 4.8rem;
+    }
+  
+    .review-box {
+        gap: 15%;
+    }
+
+    .rv{
+        display: flex;
+        align-items: center;
+    }
+
+    .rv-n{
+        order: 2;
+        padding-left: 14px;
+    }
+
+}
+
+
+/*TODO:-----------------------------------------피씨-----*/
+
+@media screen and (min-width: 1024px) { 
+
+    .pc-gnb{
+        position: relative;
+    }
+
+    .gnb-detail{
+        display: none;
+    }
+
+    .detail-container{
+        display: flex;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        
+    }
+
+    .detail-slide{
+        width: 60%;}
+
+    .detail-section{
+        width: 40%;
+        background-color:var(--White);
+        padding-right: 0; 
+        padding-top: 0;   
+    }
+    
+    .submenu{
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    .bottom-fix {
+        display: none;
+    }
+
+    /* ------수량 확인 구역 */
+
+    .num_pay-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 5rem;
+    }
+
+    .num_pay-container p{
+        font-size: 1.6rem;
+        color: var(--Gray-90);
+        letter-spacing: calc(1.6rem * -0.025); line-height: 140%;
+    }
+
+    .num_pay-container ul{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2.4rem;
+    }
+    .num_pay-container ul li p {
+        font-size: 1.8rem;
+        color: var(--Gray-90);
+        letter-spacing: calc(1.8rem * -0.025); line-height: 140%;
+        font-weight: 600;
+    }
+
+    .num-container{
+        padding: 2.4rem;
+        background-color: var(--Gray-50);
+        margin-bottom: 35px;
+    }
+
+    .num-container ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .num-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 111px;
+        height: 42px;
+        background-color: var(--White);
+        border: 1px solid var(--Gray-70);
+    }
+
+    .num-box button {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .num-box span {
+        margin: 0 10px;
+        font-size: 18px;
+      }
+
+      .pay-container{
+        border-top: 1px solid var(--Gray-70);
+        width: 100%;
+      }
+      .pay-container ul{
+        display: flex;
+        align-items: center;
+      }
+      .pay-container ul li{
+        font-size: 1.6rem;
+        letter-spacing: calc(1.6rem * -0.025); line-height: 140%;
+        color: var(--Gray-90);
+      }
+
+      .pay-container ul li p{
+        font-size: 2.2rem;
+      }
+
+      .pay-btn-container{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .pay-btn{
+        width: 50%;
+        height: 48px;
+        background-color: var(--Crystal-Teal);
+        color: var(--White);
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--Crystal-Teal);
+        margin-top: 2.4rem;
+      }
+
+      .cart{
+        background-color: var(--White);
+        color: var(--Crystal-Teal);
+      }
+
+      #detail-con{
+        display: flex;
+    }
+    #pc-left{
+        margin: 0 5rem 0 10rem;
+        width: 70vw;
+    }
+
+    .detail-tab{
+        padding: 0;
+        justify-content: left;
+        padding-right: 45%;
+        padding-left: 10rem;
+    }
+
+    /* 스크롤시 고정 디테일 탭 */
+    .fixed-tab {
+    justify-content: left;
+    padding-right: 44%;
+    padding-left: 10rem;
+  }
+
+      .detail-img-con{
+        padding:0;  
+    }
+    .dt-all-con {
+        padding:0;
+    }
+    .pc-right{
+        display: flex;
+        width: 30vw;
+        min-width: 30vw;
+        max-width: 30vw;
+        flex-shrink: 0;
+        margin-right: 10rem;
+        background-color: var(--White);
+        height: 100vh;
+
+    }
+
+    /* 스크롤시 고정 */
+
+    .fixed-right {
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 1;
+    transition: top 0.3s ease;
+  }
+
+    #num_pay{
+        justify-content: space-between;
+    }
+    #num{
+        margin-top: 10rem;
+    }
+    #pay{
+        margin-bottom: 10rem;
+    }
+
+}
