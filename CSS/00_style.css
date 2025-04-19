@@ -154,7 +154,7 @@ footer ul li a { font-size: 14px; line-height: 180%; }
  .pc-gnb-text {  display: flex;}
 
  /* ----------------------------------footer-- */
- footer { margin-top: 100px; padding: 60px 100px 200px 100px; grid-template-columns: repeat(4,1fr); gap: 40px; } 
+ footer { margin-top: 100px; padding: 60px 200px 200px 200px; grid-template-columns: repeat(4,1fr); gap: 40px; } 
 .ft04 { margin-top:0px; } 
 .ft05 { margin-top: 20px; grid-column: span 4; } 
 }

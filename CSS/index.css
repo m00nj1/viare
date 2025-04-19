@@ -193,7 +193,7 @@ section { margin: 0 24px; }
 /*TODO:-----------------------------------------피씨-----*/
 
 @media screen and (min-width: 1024px) { 
-    section { margin: 0 100px; }  
+    section { margin: 0 20rem; }  
 
 
  /* ----------------------------------main-banner-- */
@@ -233,7 +233,7 @@ section { margin: 0 24px; }
 .block-section { height: 464px; gap: 22px; } 
 .block-left { height: 464px; } 
 .block-right-container { width: 50%; height: 464px; gap: 22px; } 
-.block-right { height: calc(464px / 2); } 
+.block-right { height: calc(464px / 2); overflow: hidden;} 
 /* ---------------------------------trending--- */
 .trending-slide { max-width: 696px; height: 402px; display: flex; justify-content: center; align-items: center; } 
 .trend { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; width: auto; } 
